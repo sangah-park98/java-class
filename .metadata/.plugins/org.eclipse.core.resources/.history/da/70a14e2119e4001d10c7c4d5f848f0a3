@@ -1,0 +1,14 @@
+package com.tjoeun.syncronizedMethodTest;
+
+public class LibraryMain2 {
+
+	public static void main(String[] args) {
+		
+		Library2 library2 = new Library2();
+		System.out.println(library2.bookList2);
+		library2.bookList2.remove(0);
+	}
+	
+	
+	
+}

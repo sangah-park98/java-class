@@ -1,0 +1,13 @@
+package com.tjoeun.syncronizedMethodTest;
+
+public class LibraryMain2 {
+
+	public static void main(String[] args) {
+		
+		Library library = new Library();
+		System.out.println(library.bookList);
+	}
+	
+	
+	
+}

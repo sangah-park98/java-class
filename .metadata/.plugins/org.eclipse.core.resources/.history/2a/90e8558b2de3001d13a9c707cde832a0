@@ -1,0 +1,12 @@
+package com.tjoeun.joinThreadTest;
+
+public class JoinThreadTest {
+
+	public static void main(String[] args) {
+		
+		JoinThread jt1 = new JoinThread(1, 50);
+		jt1.start();
+		System.out.println(jt1);
+	}
+	
+}

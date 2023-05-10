@@ -1,0 +1,13 @@
+package com.tjoeun.threadPriorityTest;
+
+public class PriorityThread extends Thread {
+
+	@Override
+	public void run() {
+		
+	}
+
+	
+	
+	
+}

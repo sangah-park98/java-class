@@ -1,0 +1,29 @@
+package com.tjoeun.deamonThreadTest;
+
+public class GameThread {
+	
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+		for(int i=0; i<10; i++) {
+			System.out.println("신나게 게임하는 중...");
+			
+			if(i ==7) {
+				System.out.println("앗... 엄마다...");
+				System.out.println("엄마가 오셔서 게임을 종료합니다. . ㅜㅅㅜ ");
+				break;
+			}
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		
+		
+	}
+}

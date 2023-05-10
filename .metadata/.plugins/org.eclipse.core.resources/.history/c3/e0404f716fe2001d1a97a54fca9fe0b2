@@ -1,0 +1,38 @@
+package com.tjoeun.collectionTest;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+
+public class HashSetTest2 {
+
+	public static void main(String[] args) {
+		
+		HashSet<String> hset = new HashSet<>();
+		
+		hset.add("홍길동");
+		System.out.println(hset.size() + ": " + hset);
+		hset.add("임꺽정");
+		System.out.println(hset.size() + ": " + hset);
+		hset.add("장길산");
+		System.out.println(hset.size() + ": " + hset);
+		hset.add("일지매");
+		System.out.println(hset.size() + ": " + hset);
+		hset.add("홍길동");
+		System.out.println(hset.size() + ": " + hset);
+	
+		System.out.println("------------------------------------");
+		
+		ArrayList<String> list = new ArrayList<>();
+//		향상된 for를 사용해서 HashSet이나 TreeSet 객체의 데이터를 1개씩 얻어올 수 있다.
+		for(String str : hset) {
+			System.out.println(str);
+			list.add(str);
+		}
+		System.out.println("------------------------------------");
+		for(int i=0; i<list.size(); i++) {
+			System.out.println(list.get(i));
+		}
+		System.out.println("------------------------------------");
+	}
+	
+}

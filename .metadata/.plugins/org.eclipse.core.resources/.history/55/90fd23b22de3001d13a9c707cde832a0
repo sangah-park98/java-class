@@ -1,0 +1,14 @@
+package com.tjoeun.joinThreadTest;
+
+public class JoinThreadTest {
+
+	public static void main(String[] args) {
+		
+		JoinThread jt1 = new JoinThread(1, 50);
+		JoinThread jt2 = new JoinThread(51, 100);
+		jt1.start();
+		System.out.println("jt1.total: " + jt1.total);
+		System.out.println("jt2.total: " + jt2.total);
+	}
+	
+}

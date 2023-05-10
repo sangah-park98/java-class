@@ -1,0 +1,25 @@
+package com.tjoeun.threadTest;
+
+public class ThreadTest {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+		
+//		'A' ~ 'Z'를 0.2초 간격으로 출력한다.
+		for(int i=0; i<26; i++) {
+			System.out.println((char)(i + 65));
+		}
+		try {
+			Thread.sleep(200);
+			System.out.println("A, B, C, D, E, F, G, H, I, G, K, L, M, N, O, P, Q, R, S, T, V, W, X, Y, Z");
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+	}	
+	
+}

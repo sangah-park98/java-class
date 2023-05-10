@@ -1,0 +1,38 @@
+package com.tjoeun.syncronizedMethodTest;
+
+import java.util.ArrayList;
+
+public class Library {
+
+	ArrayList<String> bookList = new ArrayList<>();
+	
+	public Library() {
+		
+		bookList.add("다빈치 코드");
+		bookList.add("천사와 악마");
+		bookList.add("디지털 포트리스");
+		bookList.add("라스트 심볼");
+		bookList.add("타나토노트");
+		bookList.add("개미");
+		
+	}
+//	도서 대여 메소드
+	public String lendBook() {
+//		currentThread() 메소드로 현재 스레드의 정보를 얻어온다.
+		Thread thread = Thread.currentThread();
+		
+		String book = bookList.remove(0);
+		System.out.println(thread.getName() + ": " + book + " 대여");
+		
+		return null;
+	}
+	
+	
+	
+//	도서 반납 메소드
+	public void returnBook(String book) {
+		
+	}
+	
+	
+}

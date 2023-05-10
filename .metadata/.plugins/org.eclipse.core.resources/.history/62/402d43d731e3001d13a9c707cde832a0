@@ -1,0 +1,34 @@
+package com.tjoeun.ThreadTerminate;
+
+import java.util.Scanner;
+
+public class ThreadTerminateTest {
+	
+	public static void main(String[] args) {
+		
+		ThreadTerminate terminateA = new ThreadTerminate("A");
+//		System.out.println(terminateA.getName());
+
+		ThreadTerminate terminateB = new ThreadTerminate("B");
+//		System.out.println(terminateA.getName());
+		
+		ThreadTerminate terminateC = new ThreadTerminate("C");
+//		System.out.println(terminateA.getName());
+		
+		terminateA.start();
+		terminateB.start();
+		terminateC.start();
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("스레드 종료하기");
+		
+		while(true) {
+			char ch = scanner.nextLine().charAt(0); 
+			if(ch == 'A') {
+				terminateA.setFlag(false);
+			}
+		}
+	
+	
+	}
+}

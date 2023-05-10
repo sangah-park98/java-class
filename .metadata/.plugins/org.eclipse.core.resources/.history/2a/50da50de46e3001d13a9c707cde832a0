@@ -1,0 +1,21 @@
+package com.tjoeun.synchronizedBlockTest;
+
+public class TransferThread extends Thread {
+	
+	ShareArea shareArea;
+	
+	public TransferThread()	{}
+
+	public TransferThread(ShareArea shareArea) {
+		this.shareArea = shareArea;
+	}
+
+	public ShareArea getShareArea() {
+		return shareArea;
+	}
+	public void setShareArea(ShareArea shareArea) {
+		this.shareArea = shareArea;
+	}
+	
+	
+}

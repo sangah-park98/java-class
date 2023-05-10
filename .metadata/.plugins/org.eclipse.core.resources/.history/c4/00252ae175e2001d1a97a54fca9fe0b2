@@ -1,0 +1,18 @@
+package com.tjoeun.collectionTest;
+
+import java.util.HashSet;
+
+public class HashSetTest3 {
+	
+	public static void main(String[] args) {
+		
+		HashSet<Person> hset = new HashSet<>();
+		
+		Person person = new Person();
+		System.out.println(person);
+		Person person2 = new Person("홍길동", 20);
+		System.out.println(person2);
+		
+		
+	}
+}

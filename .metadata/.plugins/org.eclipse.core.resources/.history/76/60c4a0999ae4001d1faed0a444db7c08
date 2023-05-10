@@ -1,0 +1,11 @@
+package com.tjoeun.memoList;
+
+public class MemoDAO {
+
+	public static void insert(MemoVO vo) {
+		
+		
+	}
+	
+	
+}

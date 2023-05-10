@@ -1,0 +1,9 @@
+package com.tjoeun.dbTest;
+
+public class MySQLConnectionTest {
+	
+	public static void main(String[] args) {
+		
+		
+	}
+}

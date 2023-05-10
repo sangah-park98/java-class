@@ -1,0 +1,20 @@
+package com.tjoeun.networkTest1;
+
+import java.io.PrintWriter;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.Scanner;
+
+public class Server1 {
+
+	public static void main(String[] args) {
+		
+		ServerSocket server = null; // 서버 소켓
+		Socket socket = null; // 통신 소켓
+		Scanner scanner = null; // 클라이언트에서 전송되는 데이터를 읽는 Scanner
+		PrintWriter printWriter = null; // 클라이언트로 데이터를 전송하는 PrintWriter
+		
+		
+		
+	}
+}
