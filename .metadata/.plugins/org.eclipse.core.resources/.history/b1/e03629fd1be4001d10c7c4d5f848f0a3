@@ -1,7 +1,0 @@
-package com.tjoeun.syncronizedMethodTest;
-
-public class Student2 extends Thread {
-
-
-	
-}

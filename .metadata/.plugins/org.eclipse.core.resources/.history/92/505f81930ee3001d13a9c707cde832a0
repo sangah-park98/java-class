@@ -1,7 +1,0 @@
-package com.tjoeun.genericTest3;
-
-public abstract class Material {
-	
-	abstract void doPrinting();
-	
-}
